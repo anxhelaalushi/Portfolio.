@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/styles.css"> </head> <body>
+  <header>
+    <a href="#" class="logo">Portfolio</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#jokes">Jokes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+  <section class="banner" id="home">
+    <div class="textBox">
+      <h2>Hello, I'm<br /><span> Anxhela Alushi.</span></h2>
+      <h3>I'm a Front End Web Developer.</h3>
+      <a href="#about" class="btn">About Me</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About Me</h2>
+    </div>
+    <div class="content">
+      <div class="contentBox w50">
+        <h3>I'm a Front End Web Developer.</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+          nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+          dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+          ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+          rutrum. Aenean imperdiet.<br /><br />Integer tincidunt. Cras
+          dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+          ac, enim
+        </p>
+      </div>
+     <!--<div class="w50">
+        <img src="#" class="uselessImg">
+      </div>-->
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="heading white">
+      <h2>Skills I Have</h2>
+      <p>The skills I have and what I know how to do with them.</p>
+    </div>
+    <div class="content">
+      <div class="skillsBox">
+        <img src="img/html.png">
+        <h2>HTML</h2>
+        <p>This is the thing I use to put items on a website.</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="skillsBox">
+        <img src="img/css.png">
+        <h2>CSS</h2>
+        <p>This is the thing I use to style items on a website.</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="skillsBox">
+        <img src="img/js.png">
+        <h2>JavaScript</h2>
+        <p>This is the thing I use to make the items do stuff.</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="skillsBox">
+        <img src="img/nodejs.png">
+        <h2>Node.js</h2>
+        <p>This is the thing I use if I hate my CPU and want to kill it. Would not recommend.</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="skillsBox">
+        <img src="img/ai.png">
+        <h2>Adobe Illustrator</h2>
+        <p>This is the thing I use if I want to make my own SVG logos and icons.</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="skillsBox">
+        <img src="img/github.png">
+        <h2>GitHub</h2>
+        <p>This is the thing I use to keep projects I will never finish documented.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="games" id="games">
+    <div class="heading">
+      <h2>Simple Retro Games</h2>
+      <p>Click on the image to be redirected to the game.</p>
+    </div>
+    <div class="content">
+      <div class="gamesBox">
+        <a href="https://anxhelaalushi.github.io/Basic-Tic-Tac-Toe-in-JavaScript/">
+          <img src="img/tictactoe.png" style="width:100%;">
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="gamesBox">
+        <a href="https://anxhelaalushi.github.io/Pokemon-Memory-Game/">
+          <img src="img/pokemonmemorygame.png" style="width:100%;">
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="gamesBox">
+        <a href="#">
+          <img src="img/imagenotfound.png" style="width:100%;">
+        </a>
+      </div>
+    </div>
+    <div class="heading">
+      <a href="#" class="btn">View more</a>
+    </div>
+  </section>
+
+  <section class="jokes" id="jokes">
+    <div class="heading">
+      <h2>Lame Jokes for Nerds</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+    <div class="content">
+      <div class="jokesBox">
+        <p>What do you call a group of math and science geeks at a party?<br>Social engineers.
+        </p>
+        <h3>Quote Author<br><span>The Joke Source</span></h3>
+      </div>
+    </div>
+    <div class="content">
+      <div class="jokesBox">
+        <p>What's a spider's dream job?<br>Web developer.
+        </p>
+        <h3>Quote Author<br><span>The Joke Source</span></h3>
+      </div>
+    </div>
+    <div class="content">
+      <div class="jokesBox">
+        <p>Someone figured out my password.<br>Now I have to rename my dog.
+        </p>
+        <h3>Quote Author<br><span>The Joke Source</span></h3>
+      </div>
+    </div>
+    <div class="content">
+      <div class="jokesBox">
+        <p>What do you call a computer smoking weed?<br>High tech.
+        </p>
+        <h3>Quote Author<br><span>The Joke Source</span></h3>
+      </div>
+    </div>
+    <div class="content">
+      <div class="jokesBox">
+        <p>Why do programmers prefer dark mode? <br>Cause light attracts bugs.
+        </p>
+        <h3>Quote Author<br><span>The Joke Source</span></h3>
+      </div>
+    </div>
+    <div class="content">
+      <div class="jokesBox">
+        <p>There's a band called 1023MB.<br>They haven't had a gig yet.
+        </p>
+        <h3>Quote Author<br><span>The Joke Source</span></h3>
+      </div>
+    </div>
+    <div class="content">
+      <div class="jokesBox">
+        <p>Microsoft is working on software for self-driving vehicles.<br>I can't wait until my car suddenly stops in the middle of the highway and reboots to install updates.
+        </p>
+        <h3>Quote Author<br><span>The Joke Source</span></h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="heading white">
+      <h2>Contact</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+    <div class="content">
+      <div class="contactInfo">
+        <h3>Contact Info</h3>
+        <div class="contactInfoBox">
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>Rruga Mine Peza <br> Tirana, Albania <br> 55060</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+355-69-000-0000</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-envelope-o"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>alushianxhela@outlook.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formBox">
+        <form>
+          <h3>Message Me</h3>
+          <input type="text" name="" placeholder="Full Name">
+          <input type="email" name="" placeholder="Email">
+          <textarea placeholder="Your Message"></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p>Copyright © 2021 Anxhela Alushi. All Rights Reserved.</p>
+  </div>
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', function () {
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+      var menuToggle = document.querySelector('.toggle');
+      var menu = document.querySelector('.menu');
+      menuToggle.classList.toggle('active');
+      menu.classList.toggle('active');
+    }
+  </script>
+  </body>
+
+</html>
