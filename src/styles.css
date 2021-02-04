@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 70px;
+}
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background-image: linear-gradient(#111, #2d2e2e);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 2.5em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.banner h2 span {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.banner h3 {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.btn:hover {
+  background: #082944;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 70px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+  font-size: 14px;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header.sticky ul li a {
+  color: #111;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentBox {
+  padding-right: 45px;
+}
+
+.contentBox h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.contentBox p {
+  font-size: 14px;
+}
+
+/*.w50 {
+  min-width: 50%;
+}
+
+img {
+  max-width: 100%;
+}*/
+
+/*skills section*/
+section.skills {
+  background: #111;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills .heading.white {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.skills .content {
+  float: left;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.skills .content .skillsBox {
+  padding: 30px 20px;
+  background: #222;
+  color: #fff;
+  font-size: 0.8rem;
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.skills .content .skillsBox:hover {
+  background: #2196f3;
+}
+
+.skills .content .skillsBox img {
+  max-width: 80px;
+  filter: invert(1);
+}
+
+.skills .content .skillsBox h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*Games section*/
+
+section.games {
+  background: #f1f0f5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.games .heading {
+  font-size: 1rem;
+  color: #111;
+}
+
+.games .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: calc(33.33% - 10px);
+  padding: 8px;
+}
+
+.games .content .gamesBox {
+  float: left;
+  transition: 0.5s;
+}
+
+.games .content .gamesBox img:hover {
+  filter: drop-shadow(15px 15px 5px gray) sepia(50%);
+}
+
+.games .heading .btn:hover {
+  background: #082944;
+}
+
+/*Jokes section*/
+
+/*
+section.jokes {
+  background: #111;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jokes .heading {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.jokes .content {
+  float: left;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.jokes .content .jokesBox {
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  font-size: 2rem;
+  max-width: 1200px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.jokes .content .jokesBox:hover {
+  background: #141414;
+}
+*/
+
+section.jokes {
+  background: #111;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jokes .heading {
+  color: #fff;
+}
+
+.jokes .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.jokes .content .jokesBox {
+  max-width: calc(50% - 20px);
+  padding: 30px 20px;
+  margin: 10px;
+  background: #2196f3;
+}
+
+.jokes .content .jokesBox p {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.jokes .content .jokesBox h3 {
+  margin-top: 20px;
+  text-align: end;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.jokes .content .jokesBox h3 span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+/* Contact session*/
+
+.contact {
+  background: #1f1f1f;
+}
+.contact .heading {
+  color: #fff;
+}
+.formBox {
+  min-width: 60%;
+}
+
+.formBox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formBox form h3,
+.contactInfo h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.formBox form input,
+.formBox form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+}
+
+.formBox form textarea {
+  min-height: 200px;
+}
+
+.formBox form input::placeholder,
+.formBox form textarea::placeholder {
+  color: #999;
+}
+
+.formBox form input[type="submit"] {
+  max-width: 100px;
+  background: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contactInfo {
+  min-width: 40%;
+}
+
+.contactInfoBox {
+  position: relative;
+}
+
+.contactInfoBox .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contactInfoBox .box .icon {
+  min-width: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+
+.contactInfoBox .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.contactInfoBox .box .text h3 {
+  font-weight: 500;
+  color: #2196f3;
+  margin-bottom: 0;
+}
+
+.copyright {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+
+
+/* RESPONSIVE*/
+@media (max-width: 991px) {
+
+  header,
+  header.sticky {
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  header ul li a {
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url("https://bit.ly/3jgbGwZ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+
+  .toggle.active {
+    background: url("https://bit.ly/2MSpuSe");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+
+  header .sticky .toggle {
+    filter: invert(1);
+  }
+
+  section {
+    padding: 100px 50px;
+  }
+
+  .banner {
+    padding: 150px 50px 100px;
+  }
+
+  .banner h2 {
+    font-size: 1.5em;
+  }
+
+  .banner h3 {
+    font-size: 1em;
+  }
+
+  .btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+  }
+
+  .contentBox h3 {
+    font-size: 20px;
+  }
+
+  .skills .content .skillsBox {
+    margin: 10px;
+  }
+
+  .games .content .gamesBox {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .jokes .content .jokesBox {
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 10px;
+    background: #2196f3;
+  }
+
+    .jokes .content .jokesBox h3 {
+      margin-top: 20px;
+    }
+}
