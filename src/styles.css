@@ -516,9 +516,11 @@ section.jokes {
     padding: 10px;
   }
 
-  .jokes .content .jokesBox {
-    max-width: calc(100% - 20px);
-    padding: 40px 20px;
+    .jokes .content .jokesBox {
+    float: left;
+    width: 300px;
+    height: 150;
+    padding: 20px 20px;
     margin: 10px;
     background: #2196f3;
   }
@@ -526,4 +528,9 @@ section.jokes {
     .jokes .content .jokesBox h3 {
       margin-top: 20px;
     }
+
+    .content {
+    display: block;
+  }
+}
 }
