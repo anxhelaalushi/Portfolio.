@@ -532,5 +532,9 @@ section.jokes {
     .content {
     display: block;
   }
+
+.formBox {
+    margin-top: 20px;
 }
 }
+
