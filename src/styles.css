@@ -14,6 +14,7 @@ section {
 
 .banner {
   position: relative;
+  min-height: 100vh;
   background-image: linear-gradient(#111, #2d2e2e);
   background-size: cover;
   background-position: right;
